@@ -1,0 +1,24 @@
+/* Variables */
+
+:root {
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-background: hsl(182, 25%, 50%);
+    --clr-primary-dark: hsl(217, 45%, 22%);
+    --clr-primary-light: hsl(220, 15%, 55%);
+
+    --ff-sans-serif: sans-serif;
+    --ff-serif: serif;
+    --ff-mono: monospace;
+
+    --fw-thin: 100;
+    --fw-extra-light: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+    --fw-black: 900;
+
+}
