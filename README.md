@@ -1,2 +1,2 @@
-# starter-template
-Starter Template
+# Starter Template
+My Starter Template
