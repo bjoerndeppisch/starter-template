@@ -1,5 +1,8 @@
 @use 'sass:math';
 
+
+// Functions
+
 // Source: https://github.com/thecodercoder/responsive-design-beginners-test/blob/main/app/scss/util/_functions.scss
 // Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
 @function rem($pixel) {
@@ -21,3 +24,24 @@
         @error 'Don\'t use units when using the em() function; only numbers.';
     }
 }
+
+
+// Breakpoints
+
+$breakpoints: (
+    'small': em(640),
+    'medium': em(768),
+    'large': em(1024),
+    'xlarge': em(1280),
+);
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
+
+// Example:
+// @include breakpoint(xlarge) {
+//     font-size: 32px;
+// }
